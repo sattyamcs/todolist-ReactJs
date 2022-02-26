@@ -14,7 +14,7 @@
 }
 .center_div{
   width: 25%;
-  height: 70vh;
+  height: 80vh;
   background-color: #f4f4f4;
   border-radius: 15px;
   box-shadow: 5px 5px 25px -5px (0,0,0,0.5);
@@ -57,14 +57,42 @@ ol{
   margin-top: 30px;
 }
 ol li{
-  padding-left: 35px;
+  padding-left: 0px;
   text-align: left;
   font-size: 20px;
   font-weight: 500;
   min-height: 40px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   color: #8566aa;
   text-transform: capitalize;
   list-style: none;
+}
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.todo_style .delete_icon{
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  padding: 5px;
+  color: aliceblue  ;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+.todo_style .delete_icon:hover{
+  background-color: transparent;
+  color: crimson;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+}
+.todo_style:hover .list_style{
+  color: crimsons;
 }
